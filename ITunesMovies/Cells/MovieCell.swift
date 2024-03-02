@@ -24,41 +24,32 @@ final class MovieCell: UICollectionViewCell {
         }
     }
     
-    @UseAutolayout var vStack: UIStackView = {
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = 4
-        stack.alignment = .fill
-        stack.distribution = .fill
-        return stack
-    }()
+   @UseAutolayout private var vStack: UIStackView = .style {
+        $0.axis = .vertical
+        $0.spacing = 4
+        $0.alignment = .fill
+        $0.distribution = .fill
+    }
     
-    let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
+    let imageView: UIImageView = .style {
+        $0.contentMode = .scaleAspectFit
+    }
     
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.numberOfLines = 1
-        label.contentMode = .left
-        return label
-    }()
+    let titleLabel: UILabel = .style {
+        $0.font = UIFont.systemFont(ofSize: 14)
+        $0.numberOfLines = 1
+        $0.contentMode = .left
+    }
     
-    let detailLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 11)
-        label.numberOfLines = 1
-        label.contentMode = .left
-        return label
-    }()
+    let detailLabel: UILabel = .style {
+        $0.font = UIFont.systemFont(ofSize: 11)
+        $0.numberOfLines = 1
+        $0.contentMode = .left
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureCell()
-       
     }
     
     required init?(coder: NSCoder) {

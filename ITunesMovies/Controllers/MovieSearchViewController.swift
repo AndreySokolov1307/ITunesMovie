@@ -12,7 +12,7 @@ fileprivate enum Section: CaseIterable {
     case main
 }
 
-class MovieSearchViewController: UIViewController {
+final class MovieSearchViewController: UIViewController {
     
     private lazy var movieView = MovieView()
     private let viewModel = MovieSearchViewModel()
@@ -52,8 +52,6 @@ class MovieSearchViewController: UIViewController {
         viewModel.$movieViewModels
             .receive(on: RunLoop.main)
             .sink(receiveValue: { [weak self] viewModels in
-                // applySnapshot
-
                 self?.dataSource.apply(self!.moviesSnapshot)
             })
             .store(in: &subscriptions)

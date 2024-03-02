@@ -23,7 +23,6 @@ final class MovieSearchViewModel {
            self?.fetchMovies(with: $0)
         })
        .store(in: &subscriptions)
- 
     }
     
     func fetchMovies(with searchTerm: String) {

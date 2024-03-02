@@ -20,6 +20,7 @@
 		326213242B924BA900182B75 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326213232B924BA900182B75 /* MovieCell.swift */; };
 		326213262B924F4F00182B75 /* MovieCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326213252B924F4F00182B75 /* MovieCellViewModel.swift */; };
 		326213282B92523A00182B75 /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326213272B92523A00182B75 /* MovieSearchViewModel.swift */; };
+		32EC918F2B9371A400C0659F /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC918E2B9371A400C0659F /* UIView+Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		326213232B924BA900182B75 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		326213252B924F4F00182B75 /* MovieCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellViewModel.swift; sourceTree = "<group>"; };
 		326213272B92523A00182B75 /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		32EC918E2B9371A400C0659F /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				326213192B92251500182B75 /* Autolayout+propertyWrapper.swift */,
+				32EC918E2B9371A400C0659F /* UIView+Style.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				326213242B924BA900182B75 /* MovieCell.swift in Sources */,
 				326213262B924F4F00182B75 /* MovieCellViewModel.swift in Sources */,
 				3262131A2B92251500182B75 /* Autolayout+propertyWrapper.swift in Sources */,
+				32EC918F2B9371A400C0659F /* UIView+Style.swift in Sources */,
 				326212FA2B9214F300182B75 /* AppDelegate.swift in Sources */,
 				326212FC2B9214F300182B75 /* SceneDelegate.swift in Sources */,
 				3262131D2B9229EA00182B75 /* Constants.swift in Sources */,
